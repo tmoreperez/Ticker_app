@@ -21,7 +21,7 @@ import os
 
 #Extract API key
 
-key=st.write("Key:", st.secrets["key"])
+
 #file = open('Desktop/avkey.txt', 'r') #change desktop directory once this is rady to be devployed
 #for line in file.readlines(): 
 #    key.append(line)
@@ -35,7 +35,8 @@ def update_ticker():
     text_input.value = text_input.value#
     return 
   
-    
+key=st.secrets["key"]
+
 TICKER=text_input.value
 #extract stock data and format
 url="https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol={}&interval=5min&apikey={}".format(TICKER, key)
@@ -63,7 +64,7 @@ update.on_click(update_ticker)
 inputs = column(text_input, update)
 
 # render on the web page
-curdoc().add_root(column(p, row(inputs), width=1600))
+#curdoc().add_root(column(p, row(inputs), width=1600))
 
 
-#show(column(p, row(inputs)))
+show(column(p, row(inputs)))
