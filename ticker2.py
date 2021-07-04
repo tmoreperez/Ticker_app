@@ -18,14 +18,14 @@ from bokeh.layouts import row, column
 
 #%%
 #Extract API key
-key=[]
-file = open('Desktop/avkey.txt', 'r') #change desktop directory once this is rady to be devployed
-for line in file.readlines(): 
-    key.append(line)
-key=key[0]   
+#key=[]
+#file = open('Desktop/avkey.txt', 'r') #change desktop directory once this is rady to be devployed
+#for line in file.readlines(): 
+#    key.append(line)
+#key=key[0]   
 
 #Set up default textbox values
-text_input = TextInput(value="GME", title="Label:")
+#text_input = TextInput(value="GME", title="Label:")
 
 #set up call back 
 def update_ticker():
