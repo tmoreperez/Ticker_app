@@ -20,14 +20,13 @@ import os
 
 
 #Extract API key
-#key=
+
+st.write("key:", st.secrets["key"])
 #file = open('Desktop/avkey.txt', 'r') #change desktop directory once this is rady to be devployed
 #for line in file.readlines(): 
 #    key.append(line)
 #key=key[0]   
-
-os.environ["key"] == st.secrets["key"]
-
+key=key['key']
 #Set up default textbox values
 text_input = TextInput(value="GME", title="Label:")
 
