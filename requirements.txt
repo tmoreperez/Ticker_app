@@ -3,3 +3,4 @@ simplejson
 pandas
 numpy
 bokeh
+streamlit

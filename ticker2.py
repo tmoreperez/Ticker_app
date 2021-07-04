@@ -13,16 +13,20 @@ import datetime
 from bokeh.plotting import curdoc, figure, show
 from bokeh.models.widgets import TextInput, Button
 from bokeh.layouts import row, column
+import streamlit as st
+import os
 
 
 
-#%%
+
 #Extract API key
 #key=
 #file = open('Desktop/avkey.txt', 'r') #change desktop directory once this is rady to be devployed
 #for line in file.readlines(): 
 #    key.append(line)
 #key=key[0]   
+
+os.environ["key"] == st.secrets["key"]
 
 #Set up default textbox values
 text_input = TextInput(value="GME", title="Label:")
