@@ -67,4 +67,4 @@ inputs = column(text_input, update)
 #curdoc().add_root(column(p, row(inputs), width=1600))
 
 
-show(column(p, row(inputs)))
+st.bokeh_chart(column(p, row(inputs)))
